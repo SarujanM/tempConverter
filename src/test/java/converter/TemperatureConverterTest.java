@@ -23,17 +23,17 @@ class TemperatureConverterTest {
 
     @Test
     void fahrenheitToCelsiusBoilingPoint() {
-        asserEquals(100.0, converter.fahrenheitToCelsius(212), 0.001);
+        assertEquals(100.0, converter.fahrenheitToCelsius(212), 0.001);
     }
 
     @Test
     void celsiusToFahrenheitFreezingPoint() {
-        asserEquals(32.0, converter.celsiusToFahrenheit(0), 0.001);
+        assertEquals(32.0, converter.celsiusToFahrenheit(0), 0.001);
     }
 
     @Test
     void celsiusToFahrenheitBoilingPoint() {
-        asserEquals(212.0, converter.celsiusToFahrenheit(100), 0.001);
+        assertEquals(212.0, converter.celsiusToFahrenheit(100), 0.001);
     }
 
     @Test
