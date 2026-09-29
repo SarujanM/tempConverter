@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/SarujanM/tempConverter.git'
+                git branch: 'main', url : 'https://github.com/SarujanM/tempConverter.git'
             }
         }
         stage('Build') {
